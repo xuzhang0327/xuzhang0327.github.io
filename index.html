@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>我的 GitHub Pages</title>
+  <meta charset="UTF-8">
+  <title>Xuzhang | Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      min-height: 100vh;
+    }
+    nav {
+      width: 250px;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 2rem 1rem;
+      position: fixed;
+      height: 100%;
+    }
+    nav h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #ecf0f1;
+      padding-bottom: 0.5rem;
+    }
+    nav a {
+      display: block;
+      color: #ecf0f1;
+      text-decoration: none;
+      margin: 1rem 0;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    main {
+      margin-left: 260px;
+      padding: 2rem;
+      flex: 1;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-left: 4px solid #3498db;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+      main {
+        margin: 0;
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello GitHub Pages!</h1>
-    <p>这是我的第一版 GitHub Pages 内容！</p>
+  <nav>
+    <h1>Xuzhang</h1>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Xuzhang, a researcher passionate about AI, medicine, and data science. This site is a space to share my work, ideas, and personal projects.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>iTransformer for Multivariate Forecasting</h3>
+        <p>An advanced deep learning model designed for multivariate time series prediction, focused on voltage and current signal processing.</p>
+        <a href="https://github.com/xuzhang0327/iTransformer-project" target="_blank">View on GitHub →</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Inflammatory Glaucoma Research</h3>
+        <p>Clinical research based on multicenter analysis of uveitic glaucoma patients and outcomes, with data from South America and the Middle East.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: xuzhang0327@example.com</p>
+      <p>GitHub: <a href="https://github.com/xuzhang0327" target="_blank">github.com/xuzhang0327</a></p>
+    </section>
+
+    <footer>
+      &copy; 2025 Xuzhang | Built with GitHub Pages
+    </footer>
+  </main>
 </body>
 </html>
