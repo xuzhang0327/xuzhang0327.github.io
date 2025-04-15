@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Xuzhang | Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f5f6fa; color: #333; }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; white-space: nowrap; }
+    nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover { color: #1abc9c; }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: white;
+      margin-bottom: 4rem;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      border-left: 4px solid #3498db;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .blog { margin-bottom: 1.5rem; }
+    footer {
+      text-align: center;
+      color: #888;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      nav { gap: 1rem; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Xuzhang</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.pdf" download>Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Blog</h2>
+      <div class="blog">
+        <h3>Understanding dV/dt and dI/dt in Transformer Modeling</h3>
+        <p>How derivative-based features boost performance in multivariate predictions.</p>
+      </div>
+      <div class="blog">
+        <h3>Applying AI in Ophthalmology: Challenges and Future</h3>
+        <p>Exploring the use of AI for diagnosis and progression tracking in glaucoma.</p>
+      </div>
+    </section>
+  </main>
+  <footer>&copy; 2025 Xuzhang | Built with GitHub Pages</footer>
+</body>
+</html>
